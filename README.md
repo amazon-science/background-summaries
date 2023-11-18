@@ -2,7 +2,7 @@
 
 This is the repository for the paper "Background Summarization of Event Timelines".
 
-* Content will be added soon. *
+*Content will be added soon.*
 
 ## Security
 
