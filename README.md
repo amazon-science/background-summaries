@@ -1,12 +1,8 @@
-## My Project
+# Background Summarization of Event Timelines (EMNLP 2023)
 
-TODO: Fill this README out!
+This is the repository for the paper "Background Summarization of Event Timelines".
 
-Be sure to:
-
-* Change the title in this README
-* Edit your repository description on GitHub
-* Write in your license below and create a LICENSE file
+* Content will be added soon. *
 
 ## Security
 
@@ -14,5 +10,15 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 
 ## License
 
-This library is licensed under the LICENSE NAME HERE License.
+This content is licensed under the CC-BY-NC-4.0 License. See the LICENSE file.
 
+## Reference
+
+You can cite our paper as follows:
+
+    @inproceedings{pratapa2023background,
+        title={Background Summarization of Event Timelines},
+	author={Pratapa, Adithya and Small, Kevin and Dreyer, Markus},
+	booktitle={EMNLP},
+	year={2023}
+    }
