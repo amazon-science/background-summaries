@@ -1,0 +1,197 @@
+{
+    "id": "",
+    "update": "",
+    "background": {
+      "human": "",
+      "flan-t5-xl": "",
+      "gpt-3.5-turbo": ""
+    },
+    "best_worst": {
+      "best_summary": [
+        "turker1_best",
+        "turker2_best",
+        "turker3_best"
+      ],
+      "worst_summary": [
+        "turker1_worst",
+        "turker2_worst",
+        "turker3_worst"
+      ],
+      "Justification": [
+        "turker1_justification",
+        "turker2_justification",
+        "turker3_justification"
+      ]
+    },
+    "BUS_human": {
+      "human": {
+        "questions": [
+          "question1",
+          "question2",
+          "question3",
+          "question4",
+          "question5"
+        ],
+        "answers": [
+          "answer1",
+          "answer2",
+          "answer3",
+          "answer4",
+          "answer5"
+        ],
+        "extra_questions": [
+          "extra_question1",
+          "extra_question2",
+          "extra_question3",
+          "extra_question4",
+          "extra_question5"
+        ]
+      },
+      "flan-t5-xl": {
+        "questions": [
+          "question1",
+          "question2",
+          "question3",
+          "question4",
+          "question5"
+        ],
+        "answers": [
+          "answer1",
+          "answer2",
+          "answer3",
+          "answer4",
+          "answer5"
+        ],
+        "extra_questions": [
+          "extra_question1",
+          "extra_question2",
+          "extra_question3",
+          "extra_question4",
+          "extra_question5"
+        ]
+      },
+      "gpt-3.5-turbo": {
+        "questions": [
+          "question1",
+          "question2",
+          "question3",
+          "question4",
+          "question5"
+        ],
+        "answers": [
+          "answer1",
+          "answer2",
+          "answer3",
+          "answer4",
+          "answer5"
+        ],
+        "extra_questions": [
+          "extra_question1",
+          "extra_question2",
+          "extra_question3",
+          "extra_question4",
+          "extra_question5"
+        ]
+      }
+  },
+  "BUS_gpt-3.5-turbo": {
+    "human": {
+      "questions": [
+        "question1",
+        "question2",
+        "question3",
+        "question4",
+        "question5"
+      ],
+      "answers": [
+        "answer1",
+        "answer2",
+        "answer3",
+        "answer4",
+        "answer5"
+      ]
+    },
+    "flan-t5-xl": {
+      "questions": [
+        "question1",
+        "question2",
+        "question3",
+        "question4",
+        "question5"
+      ],
+      "answers": [
+        "answer1",
+        "answer2",
+        "answer3",
+        "answer4",
+        "answer5"
+      ]
+    },
+    "gpt-3.5-turbo": {
+      "questions": [
+        "question1",
+        "question2",
+        "question3",
+        "question4",
+        "question5"
+      ],
+      "answers": [
+        "answer1",
+        "answer2",
+        "answer3",
+        "answer4",
+        "answer5"
+      ]
+    }
+  },
+  "BUS_gpt-4-0613": {
+    "human": {
+      "questions": [
+        "question1",
+        "question2",
+        "question3",
+        "question4",
+        "question5"
+      ],
+      "answers": [
+        "answer1",
+        "answer2",
+        "answer3",
+        "answer4",
+        "answer5"
+      ]
+    },
+    "flan-t5-xl": {
+      "questions": [
+        "question1",
+        "question2",
+        "question3",
+        "question4",
+        "question5"
+      ],
+      "answers": [
+        "answer1",
+        "answer2",
+        "answer3",
+        "answer4",
+        "answer5"
+      ]
+    },
+    "gpt-3.5-turbo": {
+      "questions": [
+        "question1",
+        "question2",
+        "question3",
+        "question4",
+        "question5"
+      ],
+      "answers": [
+        "answer1",
+        "answer2",
+        "answer3",
+        "answer4",
+        "answer5"
+      ]
+    }
+  }
+}
