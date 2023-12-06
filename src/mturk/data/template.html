@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+  <!-- You can insert the instructions text (see "Instructions text... below")
+       and the main text (see Main text... below). To create the HTML
+       form, you can use a form builder UI like
+       https://bootsnipp.com/forms and paste the generated form code
+       in the main text (without the outer <form> and </form>).  -->
+  
+  <head>
+    <title>HIT</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type='text/javascript' src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js'></script>
+  </head>
+  
+  <body>
+    <form name="mturk_form" method="post" id="mturk_form" action="https://www.mturk.com/mturk/externalSubmit">
+      <input type="hidden" value="" name="assignmentId" id="assignmentId" />
+      <meta content="width=device-width,initial-scale=1" name="viewport" />
+      <p>&nbsp;</p>
+      
+      <section class="container">
+      <!-- Instructions (collapsible) -->
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div class="panel panel-primary">
+            <!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature -->
+            <a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><strong>Instructions</strong> <span class="collapse-text">(Click to expand)</span> </a>
+            <div class="panel-body" id="instructionBody">
+            In this task, we ask you to rate three text summaries about news events.
+            You are given an update about a news story.
+            These news stories are about popular real-world events.
+            Assume you have no prior or background information about the news story.
+            You are then provided with three texts, each a summary of the past events in the news story.
+            Each summary should provide context to the reader and help them understand the news update.
+            <br><br>
+            First, read the news update.
+            Then, go through the three summaries that provide you with background information about the news story.
+            Rate the best and worst summaries.
+            Feel free to choose multiple summaries as best (or worst) if they are equally effective (or ineffective) in helping you understand the news update.
+            Provide a short justification for your rating in the text box.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End instructions -->
+      
+      <div class="row" id="workContent">
+        <div class="col-xs-12 col-md-12">
+          Please read the above instructions carefully before you start the task.
+          Below is an update from a news story.
+          <br><br>
+          <b>News Update:</b> {update}
+          <br><br>
+          For the above update, the following three summaries provide the <i>necessary historical context</i> from the news story.
+          A good summary will provide relevant information from the past that helps you better understand the news update.
+          Depending on their utility, identify the best (most helpful) and worst (least helpful) summaries.
+          <br><br>
+          <b>Background Summary 1:</b> {summary1}<br><br>
+          <b>Background Summary 2:</b> {summary2}<br><br>
+          <b>Background Summary 3:</b> {summary3}<br><br>
+
+            <!-- Form Name -->
+            <legend>Rate the best and worst summaries.</legend>
+            
+            <!-- Multiple Checkboxes (inline) -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Best summary">Best summary</label>
+              <div>
+                <label class="checkbox-inline" for="Best summary-0">
+                  <input type="checkbox" name="Best summary" id="Best summary-0" value="summary1">
+                  Summary 1
+                </label>
+                <label class="checkbox-inline" for="Best summary-1">
+                  <input type="checkbox" name="Best summary" id="Best summary-1" value="summary2">
+                  Summary 2
+                </label>
+                <label class="checkbox-inline" for="Best summary-2">
+                  <input type="checkbox" name="Best summary" id="Best summary-2" value="summary3">
+                  Summary 3
+                </label>
+              </div>
+            </div>
+            
+            <!-- Multiple Checkboxes (inline) -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Worst summary">Worst summary</label>
+              <div>
+                <label class="checkbox-inline" for="Worst summary-0">
+                  <input type="checkbox" name="Worst summary" id="Worst summary-0" value="Summary 1">
+                  Summary 1
+                </label>
+                <label class="checkbox-inline" for="Worst summary-1">
+                  <input type="checkbox" name="Worst summary" id="Worst summary-1" value="Summary 2">
+                  Summary 2
+                </label>
+                <label class="checkbox-inline" for="Worst summary-2">
+                  <input type="checkbox" name="Worst summary" id="Worst summary-2" value="Summary 3">
+                  Summary 3
+                </label>
+              </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Justification">Justification</label>
+              <div class="col-md-4">                     
+                <textarea class="form-control" id="Justification" name="Justification"></textarea>
+              </div>
+            </div>
+            
+  	    </div>
+      </div>
+      <!-- End row -->
+      
+      <div class="row" id="workContent">
+        <div class="col-xs-12 col-md-12">
+	  <p>&nbsp;</p>
+            <input type="submit" id="submitButton" class="btn btn-primary" value="Submit"/>
+	</div>
+      </div>
+      
+      <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet" />
+      
+      <!-- Open internal style sheet -->
+      <style type="text/css">
+        *{
+        margin: 0;
+        padding: 0;
+        }
+
+        #collapseTrigger{
+        color:#fff;
+        display: block;
+        text-decoration: none;
+        }
+        #submitButton{
+        white-space: normal;
+        }
+        #instructionBody table{
+        font-size: 14px;
+        margin-top: 10px;
+        }
+        #instructionBody table caption{
+        text-align: left;
+        padding: 0 0 5px 0;
+        }
+        #Inputs{
+        display: block;
+        margin-top: 10px;
+        }
+        .content{
+        margin-bottom: 15px;
+        }
+        .radio:first-of-type{
+        margin-top: -5px;
+        }
+      </style>
+      <!-- Close internal style sheet -->
+
+      <!-- External JS references --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+      <!-- Open internal javascript --><script>
+        $(document).ready(function() {
+            // Instructions expand/collapse
+            var content = $('#instructionBody');
+            var trigger = $('#collapseTrigger');
+            content.hide();
+            $('.collapse-text').text('(Click to expand)');
+            trigger.click(function(){
+                content.toggle();
+                var isVisible = content.is(':visible');
+                if(isVisible){
+                    $('.collapse-text').text('(Click to collapse)');
+                }else{
+                    $('.collapse-text').text('(Click to expand)');
+                }
+            });
+            // end expand/collapse
+        
+        });
+      </script><!-- Close internal javascript -->
+
+      </section>
+    </form>
+    
+    <script language="Javascript">turkSetAssignmentID();</script>
+    
+    <!-- Do no the remove the following line. It will be used to insert MTurk answers when done: -->
+    <!-- __ANSWERS__ -->
+    
+  </body>
+  
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+  <!-- You can insert the instructions text (see "Instructions text... below")
+       and the main text (see Main text... below). To create the HTML
+       form, you can use a form builder UI like
+       https://bootsnipp.com/forms and paste the generated form code
+       in the main text (without the outer <form> and </form>).  -->
+  
+  <head>
+    <title>HIT</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type='text/javascript' src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js'></script>
+  </head>
+  
+  <body>
+    <form name="mturk_form" method="post" id="mturk_form" action="https://www.mturk.com/mturk/externalSubmit">
+      <input type="hidden" value="" name="assignmentId" id="assignmentId" />
+      <meta content="width=device-width,initial-scale=1" name="viewport" />
+      <p>&nbsp;</p>
+      
+      <section class="container">
+      <!-- Instructions (collapsible) -->
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div class="panel panel-primary">
+            <!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature -->
+            <a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><strong>Instructions</strong> <span class="collapse-text">(Click to expand)</span> </a>
+            <div class="panel-body" id="instructionBody">
+            In this task, we ask you to write questions based on a given text.
+            You are given an update about a news story.
+            These news stories are about popular real-world events.
+            Assume you have no prior or background information about the news story.
+            Write five questions you might have about the background of this news story.
+            This could be about past events in the news story.
+            See two examples below,
+            <br><br>
+            <b>Example 1</b>
+            <br><br>
+            <b>News Update</b>: Date: 2009-05-01, The US CDC says that the flu outbreak may be less serious than first feared. The WHO has no plans to increase the alert level from phase five to phase six. The number of confirmed cases in Scotland rises to three, as a friend of Iain and Dawn Askham testing positive. There are now 15 confirmed cases in the UK.
+            <br><br>
+            Question 1: What caused the flu outbreak?
+            <br>
+            Question 2: Who are Iain and Dawn Askham? and how are they related to the flu outbreak?
+            <br>
+            Question 3: What were previous assessments by US CDC and WHO on the flu outbreak?
+            <br>
+            Question 4: What is the timeline of the flu outbreak in the US?
+            <br>
+            Question 5: How did UK and Scotland respond to the flu outbreak?
+            <br><br>
+            <b>Example 2</b>
+            <br><br>
+            <b>News Update</b>: Date: 2008-09-23, On the first day of Capitol Hill hearings, lawmakers from both parties questioned policymakers. According to James B. Lockhart III of the Federal Housing Finance Agency, Fannie Mae and Freddie Mac could not continue to cover mortgage losses without government assistance. The FBI opens an investigation into whether fraud played a role in the failure of financial giants Fannie Mae, Freddie Mac, Lehman Brothers, and AIG, bringing the total number of bureau investigations into the crisis to 26. Major Japanese banks continue to acquire Wall Street assets. 
+            <br><br>
+            Question 1: What are the Capitol Hill hearings about?
+            <br>
+            Question 2: Why did Fannie Mae and Freddie Mac suffer mortgage losses?
+            <br>
+            Question 3: What caused the crisis that is being investigated by FBI?
+            <br>
+            Question 4: What is the timeline of the crisis until the Capitol Hill hearings?
+            <br>
+            Question 5: Why are major Japanese banks acquiring Wall Street assets? and what are these assets?
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End instructions -->
+      
+      <div class="row" id="workContent">
+        <div class="col-xs-12 col-md-12">
+          Please read the above instructions carefully before you start the task.
+          Below is an update from a news story.
+          <br><br>
+          <b>News Update:</b> {update}
+          <br><br>
+          Write five questions you might have about the background of this news story.
+          Do not ask questions whose answer is contained directly in the above news update.
+          We are interested in questions about the events from the past that are related to the news update.
+          <br><br>
+
+            <!-- Form Name -->
+            <legend>Background Questions</legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="question1">Question 1</label>  
+              <div class="col-md-8">
+              <input id="question1" name="question1" type="text" placeholder="" class="form-control input-md" required="">
+                
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="question2">Question 2</label>  
+              <div class="col-md-8">
+              <input id="question2" name="question2" type="text" placeholder="" class="form-control input-md" required="">
+                
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="question3">Question 3</label>  
+              <div class="col-md-8">
+              <input id="question3" name="question3" type="text" placeholder="" class="form-control input-md" required="">
+                
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="question4">Question 4</label>  
+              <div class="col-md-8">
+              <input id="question4" name="question4" type="text" placeholder="" class="form-control input-md" required="">
+                
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="question5">Question 5</label>  
+              <div class="col-md-8">
+              <input id="question5" name="question5" type="text" placeholder="" class="form-control input-md" required="">
+                
+              </div>
+            </div>
+            
+  	    </div>
+      </div>
+      <!-- End row -->
+      
+      <div class="row" id="workContent">
+        <div class="col-xs-12 col-md-12">
+	  <p>&nbsp;</p>
+            <input type="submit" id="submitButton" class="btn btn-primary" value="Submit"/>
+	</div>
+      </div>
+      
+      <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet" />
+      
+      <!-- Open internal style sheet -->
+      <style type="text/css">
+        *{
+        margin: 0;
+        padding: 0;
+        }
+
+        #collapseTrigger{
+        color:#fff;
+        display: block;
+        text-decoration: none;
+        }
+        #submitButton{
+        white-space: normal;
+        }
+        #instructionBody table{
+        font-size: 14px;
+        margin-top: 10px;
+        }
+        #instructionBody table caption{
+        text-align: left;
+        padding: 0 0 5px 0;
+        }
+        #Inputs{
+        display: block;
+        margin-top: 10px;
+        }
+        .content{
+        margin-bottom: 15px;
+        }
+        .radio:first-of-type{
+        margin-top: -5px;
+        }
+      </style>
+      <!-- Close internal style sheet -->
+
+      <!-- External JS references --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+      <!-- Open internal javascript --><script>
+        $(document).ready(function() {
+            // Instructions expand/collapse
+            var content = $('#instructionBody');
+            var trigger = $('#collapseTrigger');
+            content.hide();
+            $('.collapse-text').text('(Click to expand)');
+            trigger.click(function(){
+                content.toggle();
+                var isVisible = content.is(':visible');
+                if(isVisible){
+                    $('.collapse-text').text('(Click to collapse)');
+                }else{
+                    $('.collapse-text').text('(Click to expand)');
+                }
+            });
+            // end expand/collapse
+        
+        });
+      </script><!-- Close internal javascript -->
+
+      </section>
+    </form>
+    
+    <script language="Javascript">turkSetAssignmentID();</script>
+    
+    <!-- Do no the remove the following line. It will be used to insert MTurk answers when done: -->
+    <!-- __ANSWERS__ -->
+    
+  </body>
+  
+</html>

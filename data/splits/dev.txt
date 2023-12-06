@@ -1,0 +1,3 @@
+bp_oil_spill
+haitian_earthquake
+mj_death

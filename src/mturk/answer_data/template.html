@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+  <!-- You can insert the instructions text (see "Instructions text... below")
+       and the main text (see Main text... below). To create the HTML
+       form, you can use a form builder UI like
+       https://bootsnipp.com/forms and paste the generated form code
+       in the main text (without the outer <form> and </form>).  -->
+  
+  <head>
+    <title>HIT</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type='text/javascript' src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js'></script>
+  </head>
+  
+  <body>
+    <form name="mturk_form" method="post" id="mturk_form" action="https://www.mturk.com/mturk/externalSubmit">
+      <input type="hidden" value="" name="assignmentId" id="assignmentId" />
+      <meta content="width=device-width,initial-scale=1" name="viewport" />
+      <p>&nbsp;</p>
+      
+      <section class="container">
+      <!-- Instructions (collapsible) -->
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div class="panel panel-primary">
+            <!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature -->
+            <a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><strong>Instructions</strong> <span class="collapse-text">(Click to expand)</span> </a>
+            <div class="panel-body" id="instructionBody">
+            In this task, we ask you to extract answers from a given text.
+            You are given an article about events in a news story.
+            These news stories are about popular real-world events.
+            Assume you have no prior or background information about the news story.
+            You are provided five questions.
+            For each question, extract answers (when available) from the article.
+            If an answer is not available in the article, say "Unanswerable."
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End instructions -->
+      
+      <div class="row" id="workContent">
+        <div class="col-xs-12 col-md-12">
+          Please read the above instructions carefully before you start the task.
+          Below is a article from a news story.
+          <br><br>
+          <b>Article:</b> {background}
+          <br><br>
+          For each question below, extract the answer from the above article.
+          <b>If an answer is not available, say "Unanswerable."</b>
+          <br><br>
+          <b>Question 1</b>: {question1}<br><br>
+          <b>Question 2</b>: {question2}<br><br>
+          <b>Question 3</b>: {question3}<br><br>
+          <b>Question 4</b>: {question4}<br><br>
+          <b>Question 5</b>: {question5}<br><br>
+          <br>
+            <!-- Form Name -->
+            <legend>Answers</legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-1 control-label" for="answer1">Answer 1</label>  
+              <div class="col-md-11">
+                <input id="answer1" name="answer1" type="text" placeholder="" class="form-control input-md" required="">
+              </div>
+              <br><br>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-1 control-label" for="answer2">Answer 2</label>  
+              <div class="col-md-11">
+                <input id="answer2" name="answer2" type="text" placeholder="" class="form-control input-md" required="">
+              </div>
+              <br><br>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-1 control-label" for="answer3">Answer 3</label>  
+              <div class="col-md-11">
+                <input id="answer3" name="answer3" type="text" placeholder="" class="form-control input-md" required="">
+              </div>
+              <br><br>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-1 control-label" for="answer4">Answer 4</label>  
+              <div class="col-md-11">
+                <input id="answer4" name="answer4" type="text" placeholder="" class="form-control input-md" required="">
+              </div>
+              <br><br>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-1 control-label" for="answer5">Answer 5</label>  
+              <div class="col-md-11">
+                <input id="answer5" name="answer5" type="text" placeholder="" class="form-control input-md" required="">
+              </div>
+              <br><br>
+            </div>
+            
+  	    </div>
+      </div>
+      <!-- End row -->
+      
+      <div class="row" id="workContent">
+        <div class="col-xs-12 col-md-12">
+	  <p>&nbsp;</p>
+            <input type="submit" id="submitButton" class="btn btn-primary" value="Submit"/>
+	</div>
+      </div>
+      
+      <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet" />
+      
+      <!-- Open internal style sheet -->
+      <style type="text/css">
+        *{
+        margin: 0;
+        padding: 0;
+        }
+
+        #collapseTrigger{
+        color:#fff;
+        display: block;
+        text-decoration: none;
+        }
+        #submitButton{
+        white-space: normal;
+        }
+        #instructionBody table{
+        font-size: 14px;
+        margin-top: 10px;
+        }
+        #instructionBody table caption{
+        text-align: left;
+        padding: 0 0 5px 0;
+        }
+        #Inputs{
+        display: block;
+        margin-top: 10px;
+        }
+        .content{
+        margin-bottom: 15px;
+        }
+        .radio:first-of-type{
+        margin-top: -5px;
+        }
+      </style>
+      <!-- Close internal style sheet -->
+
+      <!-- External JS references --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+      <!-- Open internal javascript --><script>
+        $(document).ready(function() {
+            // Instructions expand/collapse
+            var content = $('#instructionBody');
+            var trigger = $('#collapseTrigger');
+            content.hide();
+            $('.collapse-text').text('(Click to expand)');
+            trigger.click(function(){
+                content.toggle();
+                var isVisible = content.is(':visible');
+                if(isVisible){
+                    $('.collapse-text').text('(Click to collapse)');
+                }else{
+                    $('.collapse-text').text('(Click to expand)');
+                }
+            });
+            // end expand/collapse
+        
+        });
+      </script><!-- Close internal javascript -->
+
+      </section>
+    </form>
+    
+    <script language="Javascript">turkSetAssignmentID();</script>
+    
+    <!-- Do no the remove the following line. It will be used to insert MTurk answers when done: -->
+    <!-- __ANSWERS__ -->
+    
+  </body>
+  
+</html>
