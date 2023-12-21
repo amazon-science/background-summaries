@@ -6,7 +6,7 @@ This is the repository for the EMNLP 2023 paper "[Background Summarization of Ev
 
 ## Dataset
 
-Background summarization dataset is available under [data](data).
+Background summarization dataset is available under [data](data), as well as on [Hugging Face datasets](https://huggingface.co/datasets/adithya7/background-summaries).
 
 ## Training and inference
 
@@ -52,7 +52,15 @@ See [src/mturk](src/mturk) for details on MTurk setup.
 
 ### Model checkpoints and predictions
 
-Coming soon.
+To download the model checkpoints and predictions,
+
+```bash
+URL=https://d1f9rvlwrb54wt.cloudfront.net/background-summaries
+wget $URL/models-flan-t5.tgz # flan-t5-xl (file size: ~10G)
+wget $URl/models-flan-t5-ift.tgz # flan-t5-xl-ift, flan-t5-xl-ift-ents (file size: ~20G)
+wget $URL/models-gpt-anns.tgz # gpt-3.5-turbo, gpt-3.5-turbo-cond-ents, human annotators (file size: ~5M)
+wget $URL/models-long-t5.tgz # long-t5-tglobal-xl (file size: ~10G)
+```
 
 ## Security
 
